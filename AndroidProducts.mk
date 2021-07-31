@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_kane.mk
+    $(LOCAL_DIR)/dot_kane.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_kane-user \
-    lineage_kane-userdebug \
-    lineage_kane-eng
+    dot_kane-user \
+    dot_kane-userdebug \
+    dot_kane-eng
