@@ -22,12 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/motorola/kane/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-## Inherit some common DotOS stuff
-$(call inherit-product, vendor/dot/config/common.mk)
+## Inherit some common AOSP stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := kane
-PRODUCT_NAME := dot_kane
+PRODUCT_NAME := aosp_kane
 PRODUCT_BRAND := Motorola
 PRODUCT_MODEL := One Vision
 PRODUCT_MANUFACTURER := Motorola
@@ -37,6 +37,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 ## Use the latest CTS approved build identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=kane_sprout \
-    PRIVATE_BUILD_DESC="10/QSAS30.62-33-4/2d332:user/release-keys"
+    PRIVATE_BUILD_DESC="11/RSAS31.Q1-48-36-11/9d844:user/release-keys"
 
-BUILD_FINGERPRINT := motorola/kane_retail/kane_sprout:10/QSAS30.62-33-4/2d332:user/release-keys
+BUILD_FINGERPRINT := motorola/kane_retail/kane_sprout:11/RSAS31.Q1-48-36-11/9d844:user/release-keys

@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_kane.mk
+    $(LOCAL_DIR)/aosp_kane.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_kane-user \
-    dot_kane-userdebug \
-    dot_kane-eng
+    aosp_kane-user \
+    aosp_kane-userdebug \
+    aosp_kane-eng
